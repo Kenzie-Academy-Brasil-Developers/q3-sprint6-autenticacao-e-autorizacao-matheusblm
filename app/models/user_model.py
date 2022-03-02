@@ -16,7 +16,6 @@ class UserModel(db.Model):
     last_name = Column(VARCHAR(511), nullable=False)
     email = Column(VARCHAR(255), nullable=False, unique=True)
     password_hash = Column(VARCHAR(511), nullable=False)
-    api_key = Column(VARCHAR(511), nullable=False)
 
     @property
     def password(self):
